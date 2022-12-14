@@ -1,7 +1,7 @@
 # Connect4_Game
 
 Welcome to the Connect4 game agents repository!
-This repository contains two implementations of game agents for the popular game Connect4. <br \>
+This repository contains two implementations of game agents for the popular game Connect4. <br />
 The agents use two reinforcement learning algorithms: Monte Carlo tree search and Q learning.
 To use the agents, you will need to download the all the files and run them, you will have to install pre-requiste libraies for the same. <br /> <br />
 Pre-requisites:
