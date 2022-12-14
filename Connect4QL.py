@@ -443,7 +443,7 @@ def q_update(parent_node, last_state_action):
 
 
 def trainer():
-    qtable = pickle.load(gzip.open("C:\\Users\\agraw\\PycharmProjects\\AI-Assignment2\\20180827_final_4.dat.gz", "rb"))
+    qtable = pickle.load(gzip.open("qplay.dat.gz", "rb"))
     qtable = {}
     initial_time = time.time()
     n = 10000
@@ -495,7 +495,7 @@ def trainer():
         n -= 1
     # print(len(qtable))
     # print(qtable)
-    pickle.dump(qtable, gzip.open("C:\\Users\\agraw\\PycharmProjects\\AI-Assignment2\\20180827_final_4.dat.gz", "wb"),
+    pickle.dump(qtable, gzip.open("qplay.dat.gz", "wb"),
                 protocol=pickle.HIGHEST_PROTOCOL)
     print("MCTs = ", mcts, " Qlearn = ", qlearn, " Draw ", draw)
     # print(-start_time+time.time())
